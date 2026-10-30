@@ -1,0 +1,15 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor
+*.suo
+*.user
+.vscode/
+.idea/
+
+# Large data files (upload separately or use Git LFS)
+*.csv
+
+# MySQL Workbench
+*.mwb.bak
