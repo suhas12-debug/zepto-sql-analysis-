@@ -26,6 +26,10 @@ zepto-sql-analysis/
 ├── schema.sql           # Database creation, table setup & data type corrections
 ├── zepto_analysis.sql   # Data exploration, cleaning & all business queries
 ├── zepto.csv            # Raw dataset (source data)
+├── powerbi/             # Power BI dashboard (.pbix, screenshots, docs)
+│   ├── Zepto_Inventory_Analysis_PBI.pbix
+│   ├── screenshots/
+│   └── README.md
 └── README.md            # Project documentation
 ```
 
@@ -98,6 +102,18 @@ Execute `zepto_analysis.sql` to run all exploration, cleaning, and business anal
 
 ---
 
+## 📊 Power BI Dashboard
+
+The cleaned data was taken into **Power BI** to build an interactive 3-page inventory dashboard (Power Query cleaning, 5 DAX measures, 2 calculated columns, category slicer synced across pages, page navigator).
+
+![Overview](powerbi/screenshots/01_overview.png)
+![Product & Pricing](powerbi/screenshots/02_product_pricing.png)
+![Inventory Analysis](powerbi/screenshots/03_inventory_analysis.png)
+
+📁 [`powerbi/Zepto_Inventory_Analysis_PBI.pbix`](powerbi/Zepto_Inventory_Analysis_PBI.pbix) · 📖 [Full dashboard documentation](powerbi/README.md)
+
+---
+
 ## 💡 Key Business Insights
 
 - 📦 **Dairy & Staples** dominate the inventory by total weight, pointing to high-volume storage requirements.
@@ -116,6 +132,7 @@ Execute `zepto_analysis.sql` to run all exploration, cleaning, and business anal
 - **Functions** – `COUNT`, `SUM`, `AVG`, `ROUND`, `DISTINCT`, `UPPER`
 - **Logic** – `CASE WHEN`, compound conditions
 - **Schema Design** – Data type correction, normalization
+- **Power BI** – Power Query, DAX measures & calculated columns, interactive multi-page dashboards
 - **Data Cleaning** – Handling encoding bugs, unit conversion, removing dirty data
 
 ---
@@ -123,7 +140,7 @@ Execute `zepto_analysis.sql` to run all exploration, cleaning, and business anal
 ## 👤 Author
 
 **Suhas**  
-Aspiring Data Analyst | MySQL • Python • Excel  
+Aspiring Data Analyst | MySQL • Power BI • Python • Excel  
 📧 Connect on [LinkedIn](https://www.linkedin.com)  
 🐙 [GitHub Profile](https://github.com/suhas12-debug)
 
